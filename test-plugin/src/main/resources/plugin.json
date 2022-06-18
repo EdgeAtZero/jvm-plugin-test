@@ -1,9 +1,9 @@
 {
     "id": "test-plugin",
     "name": "hello world!",
-    "class": "me.edgeatzero.plugin.impl.ImplApi",
+    "class": "me.edgeatzero.plugin.impl.ImplEntrance",
     "version":  1,
-    "description": "here are no thing \n\r awdwadwadwawad",
+    "description": "here are nothing",
     "dependencies": [
         "test-library"
     ]

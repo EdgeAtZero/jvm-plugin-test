@@ -16,8 +16,4 @@ open class MyJarClassLoader(
             handler(name)
         }
     }
-
-    override fun findResource(name: String?): URL {
-        return super.findResource(name)
-    }
 }

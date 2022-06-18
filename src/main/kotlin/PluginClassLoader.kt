@@ -5,7 +5,7 @@ import java.io.InputStream
 import java.nio.file.Path
 
 /**
- *  一个简单自定义后的
+ *  一个简单插件的类加载器
  * */
 class PluginClassLoader(
     path: Path,
@@ -15,6 +15,7 @@ class PluginClassLoader(
      *  获取jar包内的插件信息
      * */
     @OptIn(ExperimentalSerializationApi::class)
-    val information: PluginInformation
-        get() = Json.Default.decodeFromStream(getResourceAsStream("plugin.json") as InputStream)
+    val info: PluginInformation by lazy {
+        Json.Default.decodeFromStream(getResourceAsStream("plugin.json") as InputStream)
+    }
 }

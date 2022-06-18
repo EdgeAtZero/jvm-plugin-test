@@ -1,9 +1,9 @@
 package me.edgeatzero.plugin
 
 /**
- *  一个测试api
+ *  插件入口接口
  * */
-interface TestApi {
+interface TestEntrance {
 
     /**
      *  测试的主入口

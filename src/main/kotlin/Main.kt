@@ -1,4 +1,4 @@
-import me.edgeatzero.plugin.TestApi
+import me.edgeatzero.plugin.TestEntrance
 import java.nio.file.Path
 import java.nio.file.Paths
 import kotlin.reflect.full.primaryConstructor
@@ -23,8 +23,8 @@ fun main() {
  * */
 fun fun1(path: Path) {
     val loader = PluginClassLoader(path) { appClassLoader.loadClass(it) }
-    val anyClass = loader.loadClass(loader.information.clazz).kotlin
-    val any = anyClass.primaryConstructor!!.call() as TestApi
+    val anyClass = loader.loadClass(loader.info.clazz).kotlin
+    val any = anyClass.primaryConstructor!!.call() as TestEntrance
     any.testRun()
 }
 
@@ -33,8 +33,9 @@ fun fun1(path: Path) {
  * */
 fun fun2(path: Path, handler: ClassLoader) {
     val loader = PluginClassLoader(path) { handler.loadClass(it) }
-    val anyClass = loader.loadClass(loader.information.clazz).kotlin
-    val any = anyClass.primaryConstructor!!.call() as TestApi
+    loader.info.dependencies
+    val anyClass = loader.loadClass(loader.info.clazz).kotlin
+    val any = anyClass.primaryConstructor!!.call() as TestEntrance
     any.testRun()
 }
 
