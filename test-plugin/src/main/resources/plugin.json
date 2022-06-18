@@ -1,0 +1,10 @@
+{
+    "id": "test-plugin",
+    "name": "hello world!",
+    "class": "me.edgeatzero.plugin.impl.ImplApi",
+    "version":  1,
+    "description": "here are no thing \n\r awdwadwadwawad",
+    "dependencies": [
+        "test-library"
+    ]
+}

@@ -1,0 +1,7 @@
+/.gradle/
+/.idea/
+/build/
+/test-api/build/
+/test-library/build/
+/test-library-override/build/
+/test-plugin/build/
