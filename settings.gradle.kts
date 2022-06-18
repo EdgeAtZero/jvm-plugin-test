@@ -1,4 +1,4 @@
 
 rootProject.name = "jvm-plugin-test"
 include("test-api", "test-plugin")
-include("test-library", "test-library-override")
+include("test-dependence", "test-dependence-override")

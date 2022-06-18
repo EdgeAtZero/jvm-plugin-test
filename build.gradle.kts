@@ -10,7 +10,7 @@ repositories {
 
 dependencies {
     implementation(project(":test-api"))
-    implementation(project(":test-library"))
+    implementation(project(":test-dependence"))
 
     implementation(kotlin("stdlib"))
     implementation(kotlin("reflect"))

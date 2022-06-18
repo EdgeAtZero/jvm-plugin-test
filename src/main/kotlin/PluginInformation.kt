@@ -1,6 +1,9 @@
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
+/**
+ *  插件信息的json文件的映射对象
+ * */
 @Serializable
 data class PluginInformation(
     @SerialName("class")

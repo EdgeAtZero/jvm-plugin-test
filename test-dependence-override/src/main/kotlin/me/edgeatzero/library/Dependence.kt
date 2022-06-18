@@ -3,7 +3,7 @@ package me.edgeatzero.library
 /**
  *  模拟依赖
  * */
-class Library {
+class Dependence {
     /**
      *  依赖版本
      * */
